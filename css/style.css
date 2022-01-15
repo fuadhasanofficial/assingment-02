@@ -27,6 +27,16 @@ header ul li{
     margin-left: 15px;
 }
 
+header ul li a{
+    text-decoration: none;
+    color:#27ae60;
+}
+
+header ul li a:hover{
+    text-decoration: underline;
+    color:rgb(19, 18, 18);
+}
+
 /* --------
 header style end
 ----------------  */
@@ -72,6 +82,7 @@ section-1 style start
 
 .section-1-singel-item img{
     transition:  transform 1s ease ;
+    width: 100%;
 }
 
 .section-1-singel-item img:hover{
@@ -185,10 +196,63 @@ section-3 style start
   font-family: 'Poppins', sans-serif;
   
 }
+/* --------
+section-3 style end
+----------------  */
 
 
 
+/* --------
+section-4 style start
+----------------  */
 
+.section-4{
+    margin-top:80px;
+}
+
+.section-4-items-wrap{
+    display: flex;
+}
+
+.section-4-singel-item{
+    width: 50%;
+}
+
+
+
+.section-4-singel-item h2{
+    color:#0A0826;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+  
+}
+
+.section-4-singel-item p{
+    color:#6C6C6C;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.section-4-singel-item img{
+    width: 100%;
+}
+
+.last-link-btn{
+    text-decoration: none;
+    color:#ffff;
+    background-color:#E02C6D; 
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 34px;
+    width: 130px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --------
+section-4 style end
+----------------  */
 footer{
     margin-top: 80px;
   
@@ -225,6 +289,69 @@ footer ul li a{
     height: 34px;
     padding-top: 10px;
     border-radius: 25px;
+}
+
+    /* -------
+    mobile viwe 
+    --------*/
+
+@media only screen and (max-width:688px) {
+
+    header{
+        flex-direction: column;
+    }
+
+    
+header ul{
+   flex-direction: column;
+}
+    .section-1-items{
+        flex-direction: column;
+    }
+
+    .section-1-singel-item{
+        width: 100%;
+    }
+
+    .main-camera{
+        margin-left: -20px;
+        width: 100%;
+    }
+
+    .social-logos-wrap{
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 4px;
+    }
+    .collection-item-wrap{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .section-4-items-wrap{
+        flex-direction: column;
+    }
+    .section-4-singel-item{
+        width: 100%;
+    }
+}
+
+
+/*------ 
+tablate view
+------ */
+
+@media only screen and (min-width:689px) and  (max-width:992px){
+    .collection-item-wrap{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .section-1-items{
+        flex-direction: column;
+    }
+    .section-1-singel-item {
+       width: 100%;
+    }
+    .section-1-singel-item img{
+        margin-left: -280px;
+    }
 }
 
    
