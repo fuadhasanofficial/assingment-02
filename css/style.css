@@ -332,6 +332,10 @@ header ul{
     .section-4-singel-item{
         width: 100%;
     }
+
+    footer ul li a{
+        width: 34px;
+    }
 }
 
 
